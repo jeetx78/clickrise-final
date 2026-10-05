@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import Footer from "@/components/Footer";
+import Footer from "../../../components/Footer";
 
 const PHONE = "9354588129";
 

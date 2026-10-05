@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Footer from "@/components/Footer";
+import Footer from "../../components/Footer";
 
 const services = [
   ["01", "performance-marketing", "PERFORMANCE MARKETING", "Meta Ads, Google Ads, lead generation and retargeting."],
