@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280">
+<rect width="720" height="1280" fill="#070707"/>
+<circle cx="580" cy="240" r="250" fill="#ff5a1f" opacity=".18"/>
+<circle cx="160" cy="1000" r="320" fill="#ff5a1f" opacity=".08"/>
+<rect x="52" y="52" width="616" height="1176" rx="28" fill="none" stroke="#ffffff" stroke-opacity=".16"/>
+<text x="76" y="120" fill="#ff5a1f" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="5">CLICKRISE / REEL</text>
+<text x="76" y="540" fill="#f4f3ef" font-family="Arial,sans-serif" font-size="88" font-weight="800">WE HELP</text>
+<text x="76" y="635" fill="#ff5a1f" font-family="Arial,sans-serif" font-size="88" font-weight="800">BRANDS</text>
+<text x="76" y="730" fill="#f4f3ef" font-family="Arial,sans-serif" font-size="88" font-weight="800">RISE.</text>
+<text x="76" y="1130" fill="#999" font-family="Arial,sans-serif" font-size="18" letter-spacing="4">SOCIAL / ADS / CREATIVE / WEB</text>
+</svg>
