@@ -22,7 +22,7 @@
 
 /* --- V3 upgrades: reel hero, services dropdown, richer motion --- */
 .nav-logo{display:flex;align-items:center}.nav-dropdown-trigger{border:0;background:transparent;color:inherit;font:700 12px/1 Manrope,Arial,sans-serif;cursor:pointer;padding:12px 0;display:flex;align-items:center;gap:6px}.nav-dropdown-trigger span{font-size:15px;color:var(--orange);transition:transform .3s}.services-dropdown{position:relative}.services-dropdown:hover .nav-dropdown-trigger span{transform:rotate(180deg)}.services-menu{position:absolute;top:calc(100% + 18px);right:-20px;width:365px;padding:10px;background:rgba(10,10,10,.96);color:#fff;border:1px solid rgba(255,255,255,.12);border-radius:20px;box-shadow:0 25px 70px rgba(0,0,0,.22);backdrop-filter:blur(20px);animation:menuIn .35s cubic-bezier(.22,1,.36,1)}.services-menu:before{content:"";position:absolute;right:45px;top:-7px;width:14px;height:14px;background:#0a0a0a;border-left:1px solid rgba(255,255,255,.12);border-top:1px solid rgba(255,255,255,.12);transform:rotate(45deg)}.services-menu a{position:relative;display:grid!important;grid-template-columns:30px 1fr 20px;align-items:center;gap:12px;padding:18px 14px!important;border-radius:13px;transition:background .3s,transform .3s;color:#fff!important}.services-menu a:hover{background:#171717;transform:translateX(5px)}.services-menu a span{font:500 9px/1 "DM Mono",monospace;color:var(--orange)}.services-menu a strong{font-size:12px;letter-spacing:.02em}.services-menu a i{font-style:normal;color:var(--orange);transition:transform .3s}.services-menu a:hover i{transform:rotate(45deg)}
-.hero-layout{grid-template-columns:minmax(0,1fr) minmax(300px,430px);gap:55px 75px;align-items:end}.hero-title-wrap{min-width:0}.hero-copy{grid-column:1;grid-row:2;padding:0 0 5px}.hero-reel-wrap{grid-column:2;grid-row:1 / span 2;align-self:center;justify-self:end;width:min(100%,390px);transform:rotate(2deg);transition:transform .6s cubic-bezier(.22,1,.36,1)}.hero-reel-wrap:hover{transform:rotate(0deg) translateY(-8px)}.hero-reel{position:relative;aspect-ratio:9/16;border-radius:28px;overflow:hidden;background:#080808;border:1px solid rgba(7,7,7,.18);box-shadow:0 35px 90px rgba(0,0,0,.2)}.hero-reel video{width:100%;height:100%;display:block;object-fit:cover}.reel-overlay{position:absolute;top:17px;left:17px;right:17px;display:flex;align-items:center;justify-content:space-between;color:#fff;font:500 9px/1 "DM Mono",monospace;letter-spacing:.14em;text-transform:uppercase;z-index:2}.reel-overlay b{display:grid;place-items:center;width:36px;height:36px;border:1px solid rgba(255,255,255,.35);border-radius:50%;font-size:14px;font-weight:400}.reel-scan{position:absolute;left:0;right:0;top:0;height:2px;background:var(--orange);box-shadow:0 0 20px rgba(255,90,31,.9);opacity:.8;animation:scan 4s linear infinite}.reel-caption{display:block;margin:16px 2px 0;color:#777;font:500 9px/1 "DM Mono",monospace;letter-spacing:.15em}.hero-title-wrap h1{animation:heroTitleIn 1.15s cubic-bezier(.22,1,.36,1) both}.hero-reel-wrap{animation:reelIn 1.15s .2s cubic-bezier(.22,1,.36,1) both}.hero-copy{animation:copyIn 1s .4s cubic-bezier(.22,1,.36,1) both}
+.hero-layout{grid-template-columns:minmax(0,1fr) minmax(300px,430px);gap:55px 75px;align-items:end}.hero-title-wrap{min-width:0}.hero-copy{grid-column:1;grid-row:2;padding:0 0 5px}.hero-reel-wrap{grid-column:2;grid-row:1 / span 2;align-self:center;justify-self:end;width:min(100%,390px);transform:none !important;transition:transform .6s cubic-bezier(.22,1,.36,1)}.hero-reel-wrap:hover{transform:translateY(-8px) !important}.hero-reel{position:relative;aspect-ratio:9/16;border-radius:28px;overflow:hidden;background:#080808;border:1px solid rgba(7,7,7,.18);box-shadow:0 35px 90px rgba(0,0,0,.2)}.hero-reel video{width:100%;height:100%;display:block;object-fit:cover}.reel-overlay{position:absolute;top:17px;left:17px;right:17px;display:flex;align-items:center;justify-content:space-between;color:#fff;font:500 9px/1 "DM Mono",monospace;letter-spacing:.14em;text-transform:uppercase;z-index:2}.reel-overlay b{display:grid;place-items:center;width:36px;height:36px;border:1px solid rgba(255,255,255,.35);border-radius:50%;font-size:14px;font-weight:400}.reel-scan{position:absolute;left:0;right:0;top:0;height:2px;background:var(--orange);box-shadow:0 0 20px rgba(255,90,31,.9);opacity:.8;animation:scan 4s linear infinite}.reel-caption{display:block;margin:16px 2px 0;color:#777;font:500 9px/1 "DM Mono",monospace;letter-spacing:.15em}.hero-title-wrap h1{animation:heroTitleIn 1.15s cubic-bezier(.22,1,.36,1) both}.hero-reel-wrap{animation:reelIn 1.15s .2s cubic-bezier(.22,1,.36,1) both}.hero-copy{animation:copyIn 1s .4s cubic-bezier(.22,1,.36,1) both}
 .service{transition:padding .4s ease,transform .4s cubic-bezier(.22,1,.36,1),background .35s}.service:hover{transform:translateX(6px)}.service h3{transition:letter-spacing .4s,transform .4s}.service:hover h3{letter-spacing:-.045em;transform:translateX(5px)}.service-light{transition:opacity .35s,transform .7s}.service:hover .service-light{transform:translate(-50%,-50%) scale(1.15)}
 .case{will-change:transform}.case-top,.case-bottom{transition:transform .6s cubic-bezier(.22,1,.36,1)}.case:hover .case-top{transform:translateY(7px)}.case:hover .case-bottom{transform:translateY(-7px)}.proof-grid>div{transition:transform .5s cubic-bezier(.22,1,.36,1),background .35s}.proof-grid>div:hover{transform:translateY(-10px);background:rgba(255,90,31,.035)}.step{transition:padding-left .45s cubic-bezier(.22,1,.36,1),background .35s}.step:hover{padding-left:16px;background:linear-gradient(90deg,rgba(255,90,31,.05),transparent)}.step h3{transition:color .3s}.step:hover h3{color:var(--orange)}.quotes article{will-change:transform}.faq-list button{transition:padding-left .3s,background .3s}.faq-list button:hover{padding-left:12px;background:rgba(255,90,31,.035)}.funnel-node{transition:opacity .5s,transform .5s}.funnel-node:hover{opacity:1!important;transform:translateX(8px)!important}.loop-ring div{transition:transform .3s,color .3s}.loop-ring:hover{animation-duration:9s}.loop-ring:hover div{color:#111}.contact-info a{position:relative}.contact-info a:after{content:"";position:absolute;left:0;right:100%;bottom:-4px;height:1px;background:var(--orange);transition:right .35s}.contact-info a:hover:after{right:0}form button{transition:transform .35s,background .3s,box-shadow .35s}form button:hover:not(:disabled){transform:translateY(-4px);box-shadow:0 16px 35px rgba(0,0,0,.18)}form button:disabled{opacity:.65;cursor:wait}.form-error{font-size:12px;color:#b32f12;line-height:1.5}.sent{animation:sentIn .6s cubic-bezier(.22,1,.36,1)}
 .mobile-services{display:flex;flex-direction:column;padding-bottom:12px;margin-bottom:4px}.mobile-services>strong{font:500 9px/1 "DM Mono",monospace;letter-spacing:.16em;color:var(--orange);padding:18px 0 8px}.mobile-services a{padding:14px 0;border-bottom:1px solid #333;font-size:15px;display:flex;justify-content:space-between}.mobile-services a span{color:var(--orange)}
@@ -36,7 +36,7 @@
 .service-hero h1 em{font-style:normal;color:var(--orange)}
 .service-bullets>div:nth-child(1),.service-bullets>div:nth-child(2),.service-bullets>div:nth-child(3),.service-bullets>div:nth-child(4),.service-bullets>div:nth-child(5),.service-bullets>div:nth-child(6){animation:capabilityIn .7s cubic-bezier(.22,1,.36,1) both;animation-delay:calc(var(--i,0) * .08s)}
 .service-bullets>div:nth-child(1){--i:1}.service-bullets>div:nth-child(2){--i:2}.service-bullets>div:nth-child(3){--i:3}.service-bullets>div:nth-child(4){--i:4}.service-bullets>div:nth-child(5){--i:5}.service-bullets>div:nth-child(6){--i:6}
-.whatsapp-float{position:fixed;right:24px;bottom:24px;z-index:90;display:flex;align-items:center;gap:10px;padding:11px 14px 11px 11px;border-radius:999px;background:#111;color:#fff;border:1px solid rgba(255,255,255,.13);box-shadow:0 15px 40px rgba(0,0,0,.18);font:700 9px/1 "DM Mono",monospace;letter-spacing:.1em;transition:transform .35s,background .3s,box-shadow .35s}.whatsapp-float span{display:grid;place-items:center;width:29px;height:29px;border-radius:50%;background:#25d366;color:#071108;font:800 9px/1 Manrope,sans-serif;letter-spacing:0}.whatsapp-float:hover{transform:translateY(-5px);background:var(--orange);box-shadow:0 20px 45px rgba(0,0,0,.22)}
+.whatsapp-float{position:fixed;left:24px;bottom:24px;z-index:90;display:flex;align-items:center;gap:10px;padding:11px 14px 11px 11px;border-radius:999px;background:#111;color:#fff;border:1px solid rgba(255,255,255,.13);box-shadow:0 15px 40px rgba(0,0,0,.18);font:700 9px/1 "DM Mono",monospace;letter-spacing:.1em;transition:transform .35s,background .3s,box-shadow .35s}.whatsapp-float span{display:grid;place-items:center;width:29px;height:29px;border-radius:50%;background:#25d366;color:#071108;font:800 9px/1 Manrope,sans-serif;letter-spacing:0}.whatsapp-float:hover{transform:translateY(-5px);background:var(--orange);box-shadow:0 20px 45px rgba(0,0,0,.22)}
 @keyframes capabilityIn{from{opacity:0;transform:translateX(35px)}to{opacity:1;transform:none}}
 @media(max-width:560px){.whatsapp-float{right:14px;bottom:14px}.whatsapp-float b{display:none}.whatsapp-float{padding:8px}.whatsapp-float span{width:34px;height:34px}}
 
@@ -964,4 +964,573 @@
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+.build-section {
+  background: var(--paper);
+  padding: 120px 0;
+}
+
+.build-heading {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 80px;
+  align-items: end;
+  margin-top: 35px;
+  margin-bottom: 65px;
+}
+
+.build-heading h2 {
+  margin: 0;
+  font-size: clamp(58px, 8vw, 120px);
+  line-height: .78;
+  letter-spacing: -.09em;
+}
+
+.build-heading h2 span {
+  color: var(--orange);
+}
+
+.build-heading p {
+  max-width: 360px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.build-grid article {
+  min-height: 280px;
+  padding: 25px;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:
+    background .35s ease,
+    color .35s ease,
+    transform .35s ease;
+}
+
+.build-grid article:hover {
+  background: var(--ink);
+  color: var(--paper);
+  transform: translateY(-6px);
+}
+
+.build-grid article>span {
+  font: 500 9px/1 "DM Mono", monospace;
+  color: var(--orange);
+}
+
+.build-grid h3 {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 55px);
+  line-height: .9;
+  letter-spacing: -.07em;
+}
+
+.build-grid p {
+  max-width: 290px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #777;
+}
+
+.build-grid article:hover p {
+  color: #aaa;
+}
+
+@media (max-width: 700px) {
+  .build-heading {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .build-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .build-grid article {
+    min-height: 220px;
+  }
+}
+
+/* =========================================================
+   CLICKRISE — REFINED TYPE SCALE
+   ========================================================= */
+
+.section-eyebrow,
+.eyebrow {
+  font-size: 9px !important;
+  letter-spacing: .16em !important;
+}
+
+.about-section h2,
+.results-section h2,
+.services-section h2,
+.portfolio-section h2,
+.different-section h2,
+.testimonials-section h2,
+.process-section h2 {
+  font-size: clamp(48px, 6vw, 92px) !important;
+  line-height: .82 !important;
+  letter-spacing: -.075em !important;
+}
+
+.about-big,
+.about-text p,
+.services-heading>p,
+.portfolio-heading>p,
+.different-grid p,
+.testimonial-card p,
+.process-intro p {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+
+.service-card h3 {
+  font-size: clamp(28px, 3vw, 48px) !important;
+}
+
+.service-category,
+.service-top,
+.service-back p,
+.service-tech,
+.work-card span,
+.work-card a {
+  font-size: 9px !important;
+}
+
+.result-box strong {
+  font-size: clamp(42px, 5vw, 76px) !important;
+}
+
+.result-box span {
+  font-size: 9px !important;
+}
+
+.contact-section h2 {
+  font-size: clamp(58px, 8vw, 120px) !important;
+}
+
+.contact-section p {
+  font-size: 13px !important;
+}
+/* =========================================
+   CREATIVE WORK
+========================================= */
+
+/* =========================================
+   CREATIVE WORK
+========================================= */
+
+.creative-work {
+  background: #111;
+  color: #fff;
+  padding: 130px 0;
+}
+
+.creative-work .eyebrow {
+  color: var(--orange);
+}
+
+.creative-work-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.62fr;
+  gap: 100px;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.creative-work-copy {
+  max-width: 520px;
+}
+
+.creative-work-copy h2 {
+  margin: 0 0 32px;
+  font-size: clamp(58px, 8vw, 120px);
+  line-height: .78;
+  letter-spacing: -.09em;
+  font-weight: 800;
+}
+
+.creative-work-copy h2 em {
+  color: var(--orange);
+  font-style: normal;
+}
+
+.creative-work-copy p {
+  max-width: 390px;
+  margin: 0 0 30px;
+  color: #999;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.creative-instagram-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  color: #fff;
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: .12em;
+  transition: .3s ease;
+}
+
+.creative-instagram-button:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
+/* =========================================
+   CREATIVE REEL
+========================================= */
+
+.creative-reel {
+  position: relative;
+  width: min(100%, 390px);
+  aspect-ratio: 9 / 16;
+  margin-left: auto;
+  overflow: hidden;
+  background: #080808;
+  border: 1px solid #292929;
+  border-radius: 28px;
+}
+
+/* THIS IS THE IMPORTANT FIX */
+
+.creative-reel>video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  background: #080808;
+}
+
+/* Reel top overlay */
+
+.creative-reel-overlay {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  right: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font: 500 9px/1 "DM Mono", monospace;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.creative-reel-overlay b {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, .35);
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Reel bottom */
+
+.creative-reel-bottom {
+  position: absolute;
+  left: 17px;
+  right: 17px;
+  bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  color: #aaa;
+  font: 500 9px/1 "DM Mono", monospace;
+  letter-spacing: .12em;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .creative-work {
+    padding: 90px 0;
+  }
+
+  .creative-work-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .creative-work-copy h2 {
+    font-size: clamp(52px, 12vw, 80px);
+  }
+
+  .creative-reel {
+    width: min(100%, 360px);
+    margin: 0 auto;
+  }
+
+}
+
+/* =========================================================
+   BUILD / GROW / REPEAT — SERVICE BOXES
+   ========================================================= */
+
+.build-section {
+  background: var(--paper);
+  padding: 120px 0;
+}
+
+.build-heading {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 60px;
+}
+
+.build-heading h2 {
+  margin: 28px 0 0;
+  font-size: clamp(58px, 8vw, 120px);
+  line-height: 0.78;
+  letter-spacing: -0.09em;
+}
+
+.build-heading h2 em {
+  color: var(--orange);
+  font-style: normal;
+}
+
+.build-heading>p {
+  max-width: 340px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #666;
+}
+
+/* FOUR SERVICE BOXES */
+
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.build-card {
+  position: relative;
+  min-height: 330px;
+  padding: 25px;
+  border: 1px solid rgba(7, 7, 7, 0.16);
+  color: var(--ink);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition:
+    background 0.4s ease,
+    color 0.4s ease,
+    transform 0.4s cubic-bezier(.22, 1, .36, 1),
+    border-color 0.4s ease;
+}
+
+.build-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--orange);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.45s cubic-bezier(.22, 1, .36, 1);
+  z-index: 0;
+}
+
+.build-card:hover {
+  color: #fff;
+  border-color: var(--orange);
+  transform: translateY(-7px);
+}
+
+.build-card:hover::before {
+  transform: scaleY(1);
+}
+
+.build-card>* {
+  position: relative;
+  z-index: 1;
+}
+
+.build-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.build-card-top span {
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+
+.build-card-top b {
+  font-size: 20px;
+  font-weight: 400;
+  transition: transform 0.3s ease;
+}
+
+.build-card:hover .build-card-top b {
+  transform: translate(5px, -5px);
+}
+
+.build-card-content h3 {
+  margin: 0 0 12px;
+  max-width: 550px;
+  font-size: clamp(32px, 4vw, 62px);
+  line-height: 0.9;
+  letter-spacing: -0.075em;
+}
+
+.build-card-content p {
+  max-width: 360px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #777;
+}
+
+.build-card:hover .build-card-content p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.build-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.build-card-footer span {
+  padding: 7px 9px;
+  border: 1px solid rgba(7, 7, 7, 0.15);
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.build-card:hover .build-card-footer span {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 700px) {
+  .build-heading {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .build-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .build-card {
+    min-height: 280px;
+  }
+}
+
+/* =========================================================
+   HERO REEL — NO TILT
+   ========================================================= */
+
+.hero-reel-wrap {
+  transform: none !important;
+  rotate: none !important;
+}
+
+.hero-reel {
+  transform: none !important;
+  rotate: none !important;
+}
+
+.hero-reel-wrap:hover {
+  transform: translateY(-8px) !important;
+}
+
+.creative-instagram-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  text-decoration: none;
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.creative-instagram-button b {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.creative-instagram-button:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+}
+
+/* =========================================================
+   CREATIVE REEL VIDEO
+   ========================================================= */
+
+.creative-reel-video {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #080808;
+}
+
+.creative-reel-video video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  background: #080808;
+}
+
+.creative-video-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.55),
+      transparent 35%);
+}
+
+.creative-video-overlay span {
+  font: 500 9px/1 "DM Mono", monospace;
+  letter-spacing: 0.14em;
+  color: #fff;
 }
