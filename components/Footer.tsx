@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const PHONE = "9354588129";
-const EMAIL = "hello@clickrise.in";
+const PHONE = "8527912149";
+const EMAIL = "admin@clickriseproductions.com";
 const WA = `https://wa.me/91${PHONE}`;
 
 export default function Footer() {

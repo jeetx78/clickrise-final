@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ from: process.env.CONTACT_FROM_EMAIL || "ClickRise Website <onboarding@resend.dev>", to: [to], reply_to: email, subject: `New ClickRise enquiry${need ? ` — ${need}` : ""}`, html }),
+      body: JSON.stringify({ from: process.env.CONTACT_FROM_EMAIL || "ClickRise Website <onboarding@resend.dev>", to: ["naveen026k@gmail.com"], subject: `New ClickRise enquiry${need ? ` — ${need}` : ""}`, html }),
     });
     if (!response.ok) {
   const errorText = await response.text();

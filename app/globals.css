@@ -1534,3 +1534,7 @@
   letter-spacing: 0.14em;
   color: #fff;
 }
+
+.hero-grid-lines {
+  display: none !important;
+}

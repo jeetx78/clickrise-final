@@ -1249,16 +1249,15 @@ function Contact() {
   ) {
     e.preventDefault();
 
+    const formElement = e.currentTarget;
+    const form= new FormData(formElement);
+    const payload = Object.fromEntries(form.entries());
+
+  
+
     setSending(true);
     setError("");
 
-    const form =
-      new FormData(e.currentTarget);
-
-    const payload =
-      Object.fromEntries(
-        form.entries()
-      );
 
     try {
       const response = await fetch(
@@ -1282,9 +1281,10 @@ function Contact() {
       }
 
       setSent(true);
+      formElement.reset();
 
-      e.currentTarget.reset();
-    } catch {
+    } catch (error) {
+      console.error("Enquiry submission failed:", error);
       setError(
         "We couldn't send that right now. Please call or WhatsApp us directly."
       );
